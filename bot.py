@@ -1,9 +1,9 @@
 import requests
-import misc
+import os
 from yobit import get_btc
 from time import sleep
 
-token = misc.token
+token = os.getenv('TELEGRAM_TOKEN')
 
 URL = 'https://api.telegram.org/bot' + token + '/'
 
