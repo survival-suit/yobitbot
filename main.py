@@ -1,7 +1,4 @@
-import sys
-import requests
 import bot
-import misc
 import yobit
 
 def main():

@@ -1,6 +1,5 @@
 import requests
 import misc
-import json
 from yobit import get_btc
 from time import sleep
 
