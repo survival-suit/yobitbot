@@ -1,4 +1,5 @@
 import requests
+import simplejson
 import os
 from yobit import get_btc
 from time import sleep
