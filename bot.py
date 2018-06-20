@@ -3,6 +3,7 @@ import simplejson
 import os
 from yobit import get_btc
 from time import sleep
+from centrobank import get_eur
 
 token = os.getenv('TELEGRAM_TOKEN')
 
@@ -51,6 +52,8 @@ def main():
                 send_message(chat_id, get_btc())
             if text == '/love':
                 send_message(chat_id, 'I Love Xenia')
+            if text == '/etor':
+                send_message(chat_id, 'Евро стоит ' + get_eur() + ' рублей')
         else:
             continue
         # with open('updates.json', 'w') as file:
